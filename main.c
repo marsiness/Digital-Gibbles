@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-
+#include <ncurses/ncurses.h>
 
 
 
@@ -23,14 +22,34 @@ void mostrarCriatura(struct Criatura g)
     printf("Energia: %d/100\n", g.energy);
     printf("Felicidade: %d/100\n", g.happiness);
     printf("Inteligencia: %d\n", g.intelligence);
-    printf("Consciencia Pol: %d\n", g.consciousness);
+    printf("Consciencia: %d\n", g.consciousness);
     printf("-------------------------\n\n");
 }
 
+int menuInicial(void) {
+    clear();
+    mvprintw(2, 5, "===========================================");
+    mvprintw(3, 5, "==============DIGITAL GIBBLES==============");
+    mvprintw(4, 5, "===========================================");
+    
+    mvprintw(6, 22, "  /^ ^\\  ");  
+    mvprintw(7, 22, " / 0 0 \\ ");
+    mvprintw(8, 22, " V\\ Y /V ");
+    mvprintw(9, 22, "   \" \"   ");
 
+    mvprintw(11, 8, "Pressione qualquer tecla para iniciar.");
+   
+    refresh();
+    getch();
+    endwin();
+}
 int main(void)
 {
-    printf("=== DIGITAL GIBBLES ===\n\n");
+    initscr();
+    noecho();
+    curs_set(0);
+
+ menuInicial();
 
 
     struct Criatura gibbles;
@@ -56,20 +75,6 @@ int main(void)
 
     printf("%s nasceu!\n\n", bibbles.name);
     mostrarCriatura(bibbles);
-
-
-
-    struct Criatura pipples;
-    strcpy(bibbles.name, "Pibbles");
-    pipples.age = 0;
-    pipples.energy = 20;
-    pipples.happiness = 40;
-    pipples.intelligence = 1;
-    pipples.consciousness = 2;
-
-    printf("%s nasceu!\n\n", pipples.name);
-    mostrarCriatura(pipples);
-
 
 
     return 0;
