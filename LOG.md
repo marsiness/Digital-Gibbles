@@ -14,7 +14,7 @@
   - Instalei o Ncurses para que possa criar um menu inicial que seja mais apelativo esteticamente e mais funcional.
   - Criei o menu inicial do jogo , onde o jogador irá ver um desenho de uma criatura e deverá apertar alguma tecla do teclado para iniciar o jogo. Tive alguma dificuldade a enquadrar os elementos gráficos do menu inicial mas consegui criar o que tinha em mente.
 
-## [Sessão ] Criação do habitat dos meus personagens e criação das opções do jogo
+## [Sessão 3 ] Criação do habitat dos meus personagens e criação das opções do jogo
 - **Data:** 20-08-2026
 - **O que foi feito:**
   - Criei uma espécie de habitat onde os meus personagens vão ficar enquanto o jogador pode escolher as ações a tomar .
