@@ -22,3 +22,9 @@
   - Tive dificuldade novamente nos elementos gráficos mas com alguma pesquisa consegui implementá-los da forma que imaginei.
   - Na próxima sessão irei criar as funções para cada opção do jogo , de forma a mudar os atributos das minhas personagens.
 
+## [Sessão 4 ] Criação das estruturas para as ações  e aumento da complexidade das personagens
+- **Data:** 21-08-2026
+- **O que foi feito:**
+  - Criei as estruturas para as funções que o jogador pode tomar e criei também a estrutura de perguntas filosóficas que o jogador vai aceder à medida que o personagem ganha atributos.
+  - Consegui implementar todas as funções que queria e decidi que ia criar mais duas variáveis para tornar o jogo mais imersivo. ( Personalidade e Dilema). Estas novas variáveis servem para que á medida que as personagens se questionam evoluam trazendo dilemas para o jogador que vão afetar a personalidade que as personagens(Gibbles e Bibbles) vão desenvolver.
+  - Na próxima sessão vou focar em criar um ecrã de final de jogo e as funções dos dilemas que quero que sejam diferentes em vários patamares do jogo. 
