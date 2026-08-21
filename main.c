@@ -17,7 +17,7 @@ struct Criatura
 
 };
 
-int menuInicial(void)
+void menuInicial(void)
 {
     clear();
     mvprintw(2, 5, "===========================================");
